@@ -2,16 +2,32 @@ project:
   type: book
 
 book:
-  title: "epijuliahandbook_eng"
+  title: "The Epidemiologist Julia Handbook"
+  page-footer:
+    left: |
+      The Epidemiologist Julia Handbook was written by Applied Epi
+    right: |
+      This book was built with <a href="https://quarto.org/">Quarto</a>.
   execute-dir: project
   output-dir: _book
   jupyter: julia-1.8
+  cookie-consent:
+    type: express
+    style: simple
+  google-analytics:
+    tracking-id: "G-XXXXXXX"
 
 
   repo-url: https://github.com/appliedepi/epiJuliahandbook_eng
+  repo-actions: [issue]
 
   chapters:
+
     - index.qmd
+    - part: "About this book"
+      chapters:
+      - editorial_style.qmd 
+
     - intro.qmd
     - summary.qmd
     - references.qmd

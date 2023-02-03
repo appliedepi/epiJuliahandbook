@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="A Julia reference manual for applied epidemiology and public health.">
+
+<title>The Epidemiologist Julia Handbook</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./editorial_style.html" rel="next">
+<script src="site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+
+<script type="text/plain" cookie-consent="tracking">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-XXXXXXX', { 'anonymize_ip': true});
+</script>
+
+<script type="text/javascript" charset="UTF-8">
+document.addEventListener('DOMContentLoaded', function () {
+cookieconsent.run({
+  "notice_banner_type":"simple",
+  "consent_type":"express",
+  "palette":"light",
+  "language":"en",
+  "page_load_consent_levels":["strictly-necessary"],
+  "notice_banner_reject_button_hide":false,
+  "preferences_center_close_button_hide":false,
+  "website_name":""
+  });
+});
+</script> 
+  
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">The Epidemiologist Julia Handbook</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">The Epidemiologist Julia Handbook</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/appliedepi/epiJuliahandbook_eng" title="Source Code" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
+</div>
+    </div>
+      </div>
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link active">Julia for applied epidemiology and public health</a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">About this book</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./editorial_style.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Editorial and technical notes</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./summary.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Summary</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#julia-for-applied-epidemiology-and-public-health" id="toc-julia-for-applied-epidemiology-and-public-health" class="nav-link active" data-scroll-target="#julia-for-applied-epidemiology-and-public-health">Julia for applied epidemiology and public health</a></li>
+  <li><a href="#written-by-epidemiologists-for-epidemiologists" id="toc-written-by-epidemiologists-for-epidemiologists" class="nav-link" data-scroll-target="#written-by-epidemiologists-for-epidemiologists">Written by epidemiologists, for epidemiologists</a></li>
+  <li><a href="#how-to-use-this-handbook" id="toc-how-to-use-this-handbook" class="nav-link" data-scroll-target="#how-to-use-this-handbook">How to use this handbook</a></li>
+  <li><a href="#acknowledgements" id="toc-acknowledgements" class="nav-link" data-scroll-target="#acknowledgements">Acknowledgements</a>
+  <ul class="collapse">
+  <li><a href="#contributors" id="toc-contributors" class="nav-link" data-scroll-target="#contributors">Contributors</a></li>
+  <li><a href="#funding-and-support" id="toc-funding-and-support" class="nav-link" data-scroll-target="#funding-and-support">Funding and support</a></li>
+  <li><a href="#inspiration" id="toc-inspiration" class="nav-link" data-scroll-target="#inspiration">Inspiration</a></li>
+  </ul></li>
+  <li><a href="#terms-of-use-and-contribution" id="toc-terms-of-use-and-contribution" class="nav-link" data-scroll-target="#terms-of-use-and-contribution">Terms of Use and Contribution</a>
+  <ul class="collapse">
+  <li><a href="#license" id="toc-license" class="nav-link" data-scroll-target="#license">License</a></li>
+  <li><a href="#citation" id="toc-citation" class="nav-link" data-scroll-target="#citation">Citation</a></li>
+  <li><a href="#contribution" id="toc-contribution" class="nav-link" data-scroll-target="#contribution">Contribution</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/appliedepi/epiJuliahandbook_eng/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block">The Epidemiologist Julia Handbook</h1>
+</div>
+
+<div>
+  <div class="description">
+    A Julia reference manual for applied epidemiology and public health.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header>
+
+<p><img src="images/Epi_R_Handbook_Banner_Beige_1500x500.png" class="img-fluid"></p>
+<section id="julia-for-applied-epidemiology-and-public-health" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="julia-for-applied-epidemiology-and-public-health">Julia for applied epidemiology and public health</h2>
+<p><strong>Usage</strong>: This handbook has been used over <strong>0 million times by 0 people</strong> around the world.</p>
+<p><strong>Objective:</strong> Serve as a quick Julia code reference manual (online and <strong>[offline][Download handbook and data]</strong>) with task-centered examples that address common epidemiological problems.</p>
+<p><strong>Languages:</strong> none so far</p>
+</section>
+<section id="written-by-epidemiologists-for-epidemiologists" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="written-by-epidemiologists-for-epidemiologists">Written by epidemiologists, for epidemiologists</h2>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/Applied_Epi_Logo.png" class="img-fluid" alt="Logo for the non profit Applied Epi"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><strong><a href="http://www.appliedepi.org">Applied Epi</a></strong> is a nonprofit organisation and grassroots movement of frontline epis from around the world. We write in our spare time to offer this resource to the community.</p>
+</div>
+</div>
+</div>
+<p>Your encouragement and feedback is most welcome:</p>
+<ul>
+<li>Visit our <strong><a href="http://www.appliedepi.org">website</a></strong> and <strong><a href="https://forms.gle/9awNd8syypTSYUsn7">join our contact list</a></strong><br>
+</li>
+<li><strong>contact@appliedepi.org</strong>, tweet <strong><a href="https://twitter.com/appliedepi">@appliedepi</a></strong>, or <strong><a href="www.linkedin.com/company/appliedepi">LinkedIn</a></strong><br>
+</li>
+<li>Submit issues to our <strong><a href="https://github.com/appliedepi/epiRhandbook_eng">Github repository</a></strong><br>
+<strong>We offer live training</strong> from instructors with decades of applied epidemiology experience - email us to discuss.</li>
+</ul>
+<form target="_blank" action="https://www.paypal.com/donate" method="post">
+<input type="hidden" name="hosted_button_id" value="YTEZELC8VBXV6"> <input type="image" src="https://github.com/appliedepi/epiRhandbook_eng/raw/master/images/donate_button_long.png" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button"> <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif">
+</form>
+</section>
+<section id="how-to-use-this-handbook" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="how-to-use-this-handbook">How to use this handbook</h2>
+<ul>
+<li>Browse the pages in the Table of Contents, or use the search box</li>
+<li>Click the “copy” icons to copy code<br>
+</li>
+<li>You can follow-along with [the example data][Download handbook and data]</li>
+</ul>
+<p><strong>Offline version</strong></p>
+<p>See instructions in the [Download handbook and data] page.</p>
+</section>
+<section id="acknowledgements" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="acknowledgements">Acknowledgements</h2>
+<p>This handbook is produced by an independent collaboration of epidemiologists from around the world drawing upon experience with organizations including local, state, provincial, and national health agencies, the World Health Organization (WHO), Doctors without Borders (MSF), hospital systems, and academic institutions.</p>
+<p>This handbook is <strong>not</strong> an approved product of any specific organization. Although we strive for accuracy, we provide no guarantee of the content in this book.</p>
+<section id="contributors" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="contributors">Contributors</h3>
+<p><strong>Editor:</strong> <a href="https://github.com/aspina7">Alex Spina</a></p>
+<p><strong>Authors</strong>:</p>
+<p><strong>Reviewers and supporters</strong>:</p>
+<p><strong>Illustrations</strong>:</p>
+</section>
+<section id="funding-and-support" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="funding-and-support">Funding and support</h3>
+<p>This book was funded by Applied Epi.</p>
+</section>
+<section id="inspiration" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="inspiration">Inspiration</h3>
+<p>The multitude of tutorials and vignettes that provided knowledge for development of handbook content are credited within their respective pages.</p>
+<p>More generally, the following sources provided inspiration for this handbook:<br>
+<a href="https://epirhandbook.com/en/">The Epidemiologist R Handbook</a><br>
+<a href="https://r4ds.had.co.nz/">R for Data Science book (R4DS)</a><br>
+<a href="https://quarto.org/docs/guide/">Quarto guide</a></p>
+</section>
+</section>
+<section id="terms-of-use-and-contribution" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="terms-of-use-and-contribution">Terms of Use and Contribution</h2>
+<section id="license" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="license">License</h3>
+<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"></a> Applied Epi Incorporated, 2021 <br>This work is licensed by Applied Epi Incorporated under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
+<p>Academic courses and epidemiologist training programs are welcome to contact us about use or adaptation of this material (email <strong>contact@appliedepi.org</strong>).</p>
+</section>
+<section id="citation" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="citation">Citation</h3>
+</section>
+<section id="contribution" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="contribution">Contribution</h3>
+<p>If you would like to make a content contribution, please contact with us first via Github issues or by email. We are implementing a schedule for updates and are creating a contributor guide.</p>
+<p>Please note that the epiRhandbook project is released with a <a href="https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html">Contributor Code of Conduct</a>. By contributing to this project, you agree to abide by its terms.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./editorial_style.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Editorial and technical notes</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+      <div class="nav-footer-center"><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+  </div>
+</footer>
+
+
+
+</body></html>

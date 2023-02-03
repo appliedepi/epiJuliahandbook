@@ -1,5 +1,92 @@
-# Preface {.unnumbered}
+![](images/Epi_R_Handbook_Banner_Beige_1500x500.png)
 
-This is a Quarto book.
+## Julia for applied epidemiology and public health {.unnumbered} 
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
+**Usage**: This handbook has been used over **0 million times by 0 people** around the world.
+
+**Objective:** Serve as a quick Julia code reference manual (online and **[offline][Download handbook and data]**) with task-centered examples that address common epidemiological problems.  
+
+**Languages:** none so far 
+
+## Written by epidemiologists, for epidemiologists {.unnumbered} 
+
+::: {layout-ncol=2}
+
+![](images/Applied_Epi_Logo.png){fig-alt="Logo for the non profit Applied Epi"}
+
+**[Applied Epi](http://www.appliedepi.org)** is a nonprofit organisation and grassroots movement of frontline epis from around the world. We write in our spare time to offer this resource to the community. 
+:::
+
+Your encouragement and feedback is most welcome:  
+
+* Visit our **[website](http://www.appliedepi.org)** and **[join our contact list](https://forms.gle/9awNd8syypTSYUsn7)**  
+* **contact@appliedepi.org**, tweet **[\@appliedepi](https://twitter.com/appliedepi)**, or **[LinkedIn](www.linkedin.com/company/appliedepi)**  
+* Submit issues to our **[Github repository](https://github.com/appliedepi/epiRhandbook_eng)**  
+**We offer live training** from instructors with decades of applied epidemiology experience - email us to discuss.
+
+<form target="_blank" action="https://www.paypal.com/donate" method="post" target="_top">
+<input type="hidden" name="hosted_button_id" value="YTEZELC8VBXV6" />
+<input type="image" src="https://github.com/appliedepi/epiRhandbook_eng/raw/master/images/donate_button_long.png" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" />
+</form>
+
+## How to use this handbook {.unnumbered} 
+
+* Browse the pages in the Table of Contents, or use the search box
+* Click the "copy" icons to copy code  
+* You can follow-along with [the example data][Download handbook and data]  
+
+**Offline version**  
+
+See instructions in the [Download handbook and data] page.
+
+## Acknowledgements {.unnumbered} 
+
+This handbook is produced by an independent collaboration of epidemiologists from around the world drawing upon experience with organizations including local, state, provincial, and national health agencies, the World Health Organization (WHO), Doctors without Borders (MSF), hospital systems, and academic institutions.
+
+This handbook is **not** an approved product of any specific organization. Although we strive for accuracy, we provide no guarantee of the content in this book.  
+
+
+### Contributors {.unnumbered}  
+
+**Editor:** [Alex Spina](https://github.com/aspina7)
+
+**Authors**: 
+
+**Reviewers and supporters**: 
+
+**Illustrations**: 
+
+
+### Funding and support {.unnumbered} 
+
+This book was funded by Applied Epi. 
+
+### Inspiration {.unnumbered} 
+
+The multitude of tutorials and vignettes that provided knowledge for development of handbook content are credited within their respective pages.  
+
+More generally, the following sources provided inspiration for this handbook:  
+[The Epidemiologist R Handbook](https://epirhandbook.com/en/)  
+[R for Data Science book (R4DS)](https://r4ds.had.co.nz/)  
+[Quarto guide](https://quarto.org/docs/guide/)
+
+## Terms of Use and Contribution {.unnumbered}   
+
+### License {.unnumbered} 
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a> Applied Epi Incorporated, 2021 <br />This work is licensed by Applied Epi Incorporated under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+
+
+Academic courses and epidemiologist training programs are welcome to contact us about use or adaptation of this material (email **contact@appliedepi.org**).  
+
+
+### Citation {.unnumbered}
+
+
+
+### Contribution {.unnumbered}  
+
+If you would like to make a content contribution, please contact with us first via Github issues or by email. We are implementing a schedule for updates and are creating a contributor guide.  
+
+Please note that the epiRhandbook project is released with a [Contributor Code of Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html). By contributing to this project, you agree to abide by its terms.
