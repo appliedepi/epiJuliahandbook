@@ -20,7 +20,8 @@ Starting off with a quarto book proj for a julia handbook.
 
 # Packages 
 - Julia has built in package management (called {pkg}) for a project (the equivalent of R's {renv})
-- see the [documentation](https://docs.julialang.org/en/v1/stdlib/Pkg/) for how this works
+- read the julia documentation on [directories](https://docs.julialang.org/en/v1/base/file/#Base.Filesystem.mkdir) 
+- see the [pkg documentation](https://docs.julialang.org/en/v1/stdlib/Pkg/) for how this works
 
 
 
