@@ -3,8 +3,13 @@ project:
 
 book:
   title: "epijuliahandbook_eng"
-  author: "Jane Doe"
-  date: "3.2.2023"
+  execute-dir: project
+  output-dir: _book
+  jupyter: julia-1.8
+
+
+  repo-url: https://github.com/appliedepi/epiJuliahandbook_eng
+
   chapters:
     - index.qmd
     - intro.qmd
