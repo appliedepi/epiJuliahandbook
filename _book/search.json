@@ -18,7 +18,7 @@
     "href": "index.html#how-to-use-this-handbook",
     "title": "The Epidemiologist Julia Handbook",
     "section": "How to use this handbook",
-    "text": "How to use this handbook\n\nBrowse the pages in the Table of Contents, or use the search box\nClick the “copy” icons to copy code\n\nYou can follow-along with [the example data][Download handbook and data]\n\nOffline version\nSee instructions in the [Download handbook and data] page."
+    "text": "How to use this handbook\n\nBrowse the pages in the Table of Contents, or use the search box\nClick the “copy” icons to copy code\n\nYou can follow-along with the example data\n\nOffline version\nSee instructions in the Download handbook and data page."
   },
   {
     "objectID": "index.html#acknowledgements",
@@ -60,7 +60,7 @@
     "href": "index.html#julia-for-applied-epidemiology-and-public-health",
     "title": "The Epidemiologist Julia Handbook",
     "section": "Julia for applied epidemiology and public health",
-    "text": "Julia for applied epidemiology and public health\nUsage: This handbook has been used over 0 million times by 0 people around the world.\nObjective: Serve as a quick Julia code reference manual (online and [offline][Download handbook and data]) with task-centered examples that address common epidemiological problems.\nLanguages: none so far"
+    "text": "Julia for applied epidemiology and public health\nUsage: This handbook has been used over 0 million times by 0 people around the world.\nObjective: Serve as a quick Julia code reference manual (online and offline) with task-centered examples that address common epidemiological problems.\nLanguages: none so far"
   },
   {
     "objectID": "editorial_style.html",
@@ -89,5 +89,12 @@
     "title": "1  Editorial and technical notes",
     "section": "1.3 Session info (Julia, VScode, packages)",
     "text": "1.3 Session info (Julia, VScode, packages)\nBelow is the information on the versions of Julia, VScode, and Julia packages used during this rendering of the Handbook.\n\nusing Pkg\nversioninfo()\nPkg.status()\n\nJulia Version 1.8.5\nCommit 17cfb8e65e (2023-01-08 06:45 UTC)\nPlatform Info:\n  OS: Windows (x86_64-w64-mingw32)\n  CPU: 16 × 12th Gen Intel(R) Core(TM) i7-1260P\n  WORD_SIZE: 64\n  LIBM: libopenlibm\n  LLVM: libLLVM-13.0.1 (ORCJIT, goldmont)\n  Threads: 1 on 16 virtual cores\n\n\nStatus `C:\\Users\\spina\\Desktop\\epiJuliahandbook_eng\\Project.toml`\n  [7073ff75] IJulia v1.24.0\n⌃ [91a5bcdd] Plots v1.38.4\n  [44cfe95a] Pkg v1.8.0\nInfo Packages marked with ⌃ have new versions available and may be upgradable."
+  },
+  {
+    "objectID": "data_used.html",
+    "href": "data_used.html",
+    "title": "2  Download handbook and data",
+    "section": "",
+    "text": "blabla"
   }
 ]
