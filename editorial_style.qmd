@@ -144,5 +144,6 @@ Below is the information on the versions of Julia, VScode, and Julia packages us
 
 ```{julia}
 using Pkg
+versioninfo()
 Pkg.status()
 ```
