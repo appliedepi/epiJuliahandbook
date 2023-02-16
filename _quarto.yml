@@ -1,5 +1,8 @@
 project:
   type: book
+  # execute-dir: project
+  output-dir: _book
+  # jupyter: julia-1.8
 
 book:
   title: "The Epidemiologist Julia Handbook"
@@ -8,9 +11,6 @@ book:
       The Epidemiologist Julia Handbook was written by Applied Epi
     right: |
       This book was built with <a href="https://quarto.org/">Quarto</a>.
-  execute-dir: project
-  output-dir: _book
-  jupyter: julia-1.8
   cookie-consent:
     type: express
     style: simple

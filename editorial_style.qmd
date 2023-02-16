@@ -141,6 +141,17 @@ With version 1.0.1 the following changes have been implemented:
 
 Below is the information on the versions of Julia, VScode, and Julia packages used during this rendering of the Handbook.  
 
+```{julia}
+#| echo: FALSE
+#| eval: TRUE 
+
+# using Pkg
+# Pkg.add("IJulia")
+using IJulia
+Pkg.build("IJulia")
+# notebook()
+```
+
 
 ```{julia}
 using Pkg
