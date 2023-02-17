@@ -26,14 +26,14 @@ book:
     - index.qmd
     - part: "About this book"
       chapters:
-      - editorial_style.qmd 
-      - data_used.qmd
+      - pages/editorial_style.qmd 
+      - pages/data_used.qmd
 
-    - intro.qmd
-    - summary.qmd
-    - references.qmd
+    - pages/intro.qmd
+    - pages/summary.qmd
+    - pages/references.qmd
 
-bibliography: references.bib
+bibliography: pages/references.bib
 
 format:
   html:

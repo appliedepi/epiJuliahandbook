@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>The Epidemiologist Julia Handbook - 1&nbsp; Editorial and technical notes</title>
+<title>The Epidemiologist Julia Handbook - 3&nbsp; Introduction</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -83,29 +83,48 @@ code span.st { color: #4070a0; } /* String */
 code span.va { color: #19177c; } /* Variable */
 code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./data_used.html" rel="next">
-<link href="./index.html" rel="prev">
-<script src="site_libs/cookie-consent/cookie-consent.js"></script>
-<link href="site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../pages/summary.html" rel="next">
+<link href="../pages/data_used.html" rel="prev">
+<script src="../site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -163,7 +182,7 @@ cookieconsent.run({
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">About this book</li><li class="breadcrumb-item"><a href="./editorial_style.html">&lt;span class='chapter-number'&gt;1&lt;/span&gt;&nbsp; &lt;span class='chapter-title'&gt;Editorial and technical notes&lt;/span&gt;</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../pages/intro.html">&lt;span class='chapter-number'&gt;3&lt;/span&gt;&nbsp; &lt;span class='chapter-title'&gt;Introduction&lt;/span&gt;</a></li></ol></nav>
       <a class="flex-grow-1" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
       </a>
     </div>
@@ -175,7 +194,7 @@ cookieconsent.run({
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">The Epidemiologist Julia Handbook</a> 
+      <a href="../">The Epidemiologist Julia Handbook</a> 
         <div class="sidebar-tools-main">
     <a href="https://github.com/appliedepi/epiJuliahandbook_eng" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
 </div>
@@ -190,7 +209,7 @@ cookieconsent.run({
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">Julia for applied epidemiology and public health</a>
+  <a href="../index.html" class="sidebar-item-text sidebar-link">Julia for applied epidemiology and public health</a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -203,29 +222,29 @@ cookieconsent.run({
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./editorial_style.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Editorial and technical notes</span></a>
+  <a href="../pages/editorial_style.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Editorial and technical notes</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./data_used.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Download handbook and data</span></a>
+  <a href="../pages/data_used.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Download handbook and data</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Introduction</span></a>
+  <a href="../pages/intro.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Introduction</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./summary.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Summary</span></a>
+  <a href="../pages/summary.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Summary</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
+  <a href="../pages/references.html" class="sidebar-item-text sidebar-link">References</a>
   </div>
 </li>
     </ul>
@@ -234,28 +253,14 @@ cookieconsent.run({
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#approach-and-style" id="toc-approach-and-style" class="nav-link active" data-scroll-target="#approach-and-style"><span class="toc-section-number">1.1</span>  Approach and style</a>
-  <ul class="collapse">
-  <li><a href="#julia-packages" id="toc-julia-packages" class="nav-link" data-scroll-target="#julia-packages">Julia packages</a></li>
-  <li><a href="#code-style" id="toc-code-style" class="nav-link" data-scroll-target="#code-style">Code style</a></li>
-  <li><a href="#nomenclature" id="toc-nomenclature" class="nav-link" data-scroll-target="#nomenclature">Nomenclature</a></li>
-  <li><a href="#notes" id="toc-notes" class="nav-link" data-scroll-target="#notes">Notes</a></li>
-  </ul></li>
-  <li><a href="#major-revisions" id="toc-major-revisions" class="nav-link" data-scroll-target="#major-revisions"><span class="toc-section-number">1.2</span>  Major revisions</a></li>
-  <li><a href="#session-info-julia-vscode-packages" id="toc-session-info-julia-vscode-packages" class="nav-link" data-scroll-target="#session-info-julia-vscode-packages"><span class="toc-section-number">1.3</span>  Session info (Julia, VScode, packages)</a></li>
-  </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/appliedepi/epiJuliahandbook_eng/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Editorial and technical notes</span></h1>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Introduction</span></h1>
 </div>
 
 
@@ -270,213 +275,19 @@ cookieconsent.run({
 
 </header>
 
-<p>In this page we describe the philosophical approach, style, and specific editorial decisions made during the creation of this handbook.</p>
-<section id="approach-and-style" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="approach-and-style"><span class="header-section-number">1.1</span> Approach and style</h2>
-<p>The potential audience for this book is large. It will surely be used by people very new to Julia, and also by experienced Julia users looking for best practices and tips. So it must be both accessible and succinct. Therefore, our approach was to provide <em>just enough</em> text explanation that someone very new to Julia can apply the code and follow what the code is doing.</p>
-<p>A few other points:</p>
-<ul>
-<li>This is a code reference book accompanied by relatively brief examples - <em>not</em> a thorough textbook on Julia or data science<br>
-</li>
-<li>This is a <em>Julia handbook</em> for use within applied epidemiology - not a manual on the methods or science of applied epidemiology<br>
-</li>
-<li>This is intended to be a living document - optimal Julia packages for a given task change often and we welcome discussion about which to emphasize in this handbook</li>
-</ul>
-<section id="julia-packages" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="julia-packages">Julia packages</h3>
-<p><strong>So many choices</strong></p>
-<p>One of the most challenging aspects of learning Julia is knowing which Julia package to use for a given task. It is a common occurrence to struggle through a task only later to realize - hey, there’s a Julia package that does all that in one command line!</p>
-<p>In this handbook, we try to offer you at least two ways to complete each task: one tried-and-true method (probably in <strong>base</strong> Julia) and one special Julia package that is custom-built for that purpose. We want you to have a couple options in case you can’t download a given package or it otherwise does not work for you.</p>
-<p>In choosing which packages to use, we prioritized Julia packages and approaches that have been tested and vetted by the community, minimize the number of packages used in a typical work session, that are stable (not changing very often), and that accomplish the task simply and cleanly</p>
-<p>This handbook generally prioritizes Julia packages which mimic the R packages and functions from the <strong>tidyverse</strong>. Tidyverse is a collection of R packages designed for data science that share underlying grammar and data structures. All tidyverse packages can be installed or loaded via the <strong>tidyverse</strong> package. Read more at the <a href="https://www.tidyverse.org/">tidyverse website</a>.</p>
-<p>When applicable, we also offer code options using <strong>base</strong> Julia - the packages and functions that come with Julia at installation. This is because we recognize that some of this book’s audience may not have reliable internet to download extra packages.</p>
-<p><strong>Linking functions to packages explicitly</strong></p>
-<p>It is often frustrating in R tutorials when a function is shown in code, but you don’t know which package it is from! We try to avoid this situation.</p>
-<p>In the narrative text, package names are written in bold (e.g.&nbsp;<strong>DataFrames</strong>) and functions are written like this: <code>transform()</code>. We strive to be explicit about which package a function comes from, either by referencing the package in nearby text or by specifying the package explicitly in the code like this: <code>df::transform()</code>. It may look redundant, but we are doing it on purpose.</p>
-<p>See the page on [Julia basics] to learn more about packages and functions.</p>
-</section>
-<section id="code-style" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="code-style">Code style</h3>
-<p>In the handbook, we frequently utilize “new lines”, making our code appear “long”. We do this for a few reasons:</p>
-<ul>
-<li>We can write explanatory comments with <code>#</code> that are adjacent to each little part of the code<br>
-</li>
-<li>Generally, longer (vertical) code is easier to read<br>
-</li>
-<li>It is easier to read on a narrow screen (no sideways scrolling needed)<br>
-</li>
-<li>From the indentations, it can be easier to know which arguments belong to which function</li>
-</ul>
-<p>As a result, code that <em>could</em> be written like this:</p>
-<p>…is written like this:</p>
-<p>Julia code is generally not affected by new lines or indentations. When writing code, if you initiate a new line after a comma it will apply automatic indentation patterns.</p>
-<p>We also use lots of spaces (e.g.&nbsp;<code>n = 1</code> instead of <code>n=1</code>) because it is easier to read. Be kind to the people reading your code!</p>
-</section>
-<section id="nomenclature" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="nomenclature">Nomenclature</h3>
-<p>In this handbook, we generally reference “columns” and “rows” instead of “variables” and “observations”. As explained in this primer on <a href="https://tidyr.tidyverse.org/articles/tidy-data.html">“tidy data”</a>, most epidemiological statistical datasets consist structurally of rows, columns, and values.</p>
-<p><em>Variables</em> contain the values that measure the same underlying attribute (like age group, outcome, or date of onset). <em>Observations</em> contain all values measured on the same unit (e.g.&nbsp;a person, site, or lab sample). So these aspects can be more difficult to tangibly define.</p>
-<p>In “tidy” datasets, each column is a variable, each row is an observation, and each cell is a single value. However some datasets you encounter will not fit this mold - a “wide” format dataset may have a variable split across several columns (see an example in the [Pivoting data] page). Likewise, observations could be split across several rows.</p>
-<p>Most of this handbook is about managing and transforming data, so referring to the concrete data structures of rows and columns is more relevant than the more abstract observations and variables. Exceptions occur primarily in pages on data analysis, where you will see more references to variables and observations.</p>
-</section>
-<section id="notes" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="notes">Notes</h3>
-<p>Here are the types of notes you may encounter in the handbook:</p>
-<div class="callout callout-style-default callout-note callout-captioned">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>This is an example of a note</p>
-</div>
-</div>
-<div class="callout callout-style-default callout-tip callout-captioned">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>This is an example of a tip.</p>
-</div>
-</div>
-<div class="callout callout-style-default callout-warning callout-captioned">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Warning
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>This is an example of a warning.</p>
-</div>
-</div>
-<div class="callout callout-style-default callout-important callout-captioned">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Danger
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>This is an example of an important point.</p>
-</div>
-</div>
-<div class="callout callout-style-default callout-caution callout-captioned">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Expand for more detail
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-5" class="callout-5-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>This is an example of a ‘folded’ code where you can learn more advanced or extra code that is otherwise not essential to the chapter.</p>
+<p>This is a book created from markdown and executable code.</p>
+<p>See <span class="citation" data-cites="knuth84">Knuth (<a href="references.html#ref-knuth84" role="doc-biblioref">1984</a>)</span> for additional discussion of literate programming.</p>
 <div class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">## For example some difficult math</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a> <span class="fl">1</span> <span class="op">+</span> <span class="fl">1</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="2">
-<pre><code>2</code></pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<p>Below, we track significant editorial decisions around package and function choice. If you disagree or want to offer a new tool for consideration, please join/start a conversation on our <a href="https://github.com/appliedepi/epijuliahandbook_eng">Github page</a>.</p>
-<div id="tbl-editorial_choices" class="anchored">
-<table class="table">
-<caption>Table&nbsp;1.1: Package, function, and other editorial decisions</caption>
-<colgroup>
-<col style="width: 20%">
-<col style="width: 24%">
-<col style="width: 29%">
-<col style="width: 25%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Subject</th>
-<th>Considered</th>
-<th>Outcome</th>
-<th>Brief rationale</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>nothing</td>
-<td>to see</td>
-<td>here</td>
-<td>friends</td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
-</section>
-<section id="major-revisions" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="major-revisions"><span class="header-section-number">1.2</span> Major revisions</h2>
-<table class="table">
-<thead>
-<tr class="header">
-<th>Date</th>
-<th>Major changes</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>03 Feb 2021</td>
-<td>Tumbleweeds</td>
-</tr>
-</tbody>
-</table>
-<p><strong>NEWS</strong> With version 1.0.1 the following changes have been implemented:</p>
-<ul>
-<li>more tumble weeds</li>
-</ul>
-</section>
-<section id="session-info-julia-vscode-packages" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="session-info-julia-vscode-packages"><span class="header-section-number">1.3</span> Session info (Julia, VScode, packages)</h2>
-<p>Below is the information on the versions of Julia, VScode, and Julia packages used during this rendering of the Handbook.</p>
-<div class="cell" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">using</span> <span class="bu">Pkg</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">versioninfo</span>()</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="bu">Pkg</span>.<span class="fu">status</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Julia Version 1.8.5
-Commit 17cfb8e65e (2023-01-08 06:45 UTC)
-Platform Info:
-  OS: Windows (x86_64-w64-mingw32)
-  CPU: 16 × 12th Gen Intel(R) Core(TM) i7-1260P
-  WORD_SIZE: 64
-  LIBM: libopenlibm
-  LLVM: libLLVM-13.0.1 (ORCJIT, goldmont)
-  Threads: 1 on 16 virtual cores</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Status `C:\Users\spina\Desktop\epiJuliahandbook_eng\Project.toml`
-  [7073ff75] IJulia v1.24.0
-⌃ [91a5bcdd] Plots v1.38.4
-  [44cfe95a] Pkg v1.8.0
-Info Packages marked with ⌃ have new versions available and may be upgradable.</code></pre>
-</div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">## this should be how to activate our project specific packages (just need to figure our work dir)</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># using Pkg; Pkg.activate(pwd())</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 
-</section>
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
+<div id="ref-knuth84" class="csl-entry" role="doc-biblioentry">
+Knuth, Donald E. 1984. <span>“Literate Programming.”</span> <em>Comput. J.</em> 27 (2): 97–111. <a href="https://doi.org/10.1093/comjnl/27.2.97">https://doi.org/10.1093/comjnl/27.2.97</a>.
+</div>
+</div>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -700,13 +511,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Julia for applied epidemiology and public health</span>
+      <a href="../pages/data_used.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Download handbook and data</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./data_used.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Download handbook and data</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../pages/summary.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Summary</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
