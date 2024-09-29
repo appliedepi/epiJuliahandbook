@@ -55,15 +55,15 @@ book:
 
   chapters:
   # INTRO & CONTRIBUTORS
-  - index.qmd                              # objectives, how to read, authors, acknowledgements
+  - index.qmd                              
 
   # ABOUT BOOK
   - part: "About this book"
     # part-vn: "Về cuốn sách này" 
 
     chapters:
-    - pages/editorial_style.qmd          # editorial style
-    - pages/data_used.qmd                # data used
+    - pages/editorial_style.qmd          
+    - pages/data_used.qmd                
 
   # BASICS
   - part: "Basics"
@@ -100,14 +100,14 @@ book:
     - pages/stat_tests.qmd
     - pages/regression.qmd
     - pages/missing_data.qmd
-    - pages/standardization.qmd
-    - pages/moving_average.qmd
-    - pages/time_series.qmd #done
-    - pages/epidemic_models.qmd #done
-    - pages/contact_tracing.qmd #done
-    - pages/survey_analysis.qmd #done
-    - pages/survival_analysis.qmd #done
-    - pages/gis.qmd #done
+    # - pages/standardization.qmd
+    # - pages/moving_average.qmd
+    # - pages/time_series.qmd 
+    # - pages/epidemic_models.qmd 
+    # - pages/contact_tracing.qmd 
+    # - pages/survey_analysis.qmd 
+    # - pages/survival_analysis.qmd 
+    # - pages/gis.qmd 
 
   # DATA VIZ
   - part: "Data Visualization"
@@ -118,13 +118,13 @@ book:
     - pages/ggplot_basics.qmd
     - pages/ggplot_tips.qmd 
     - pages/epicurves.qmd 
-    - pages/age_pyramid.qmd 
+    # - pages/age_pyramid.qmd 
     - pages/heatmaps.qmd   
-    - pages/diagrams.qmd  
-    - pages/combination_analysis.qmd 
-    - pages/transmission_chains.qmd 
-    - pages/phylogenetic_trees.qmd 
-    - pages/interactive_plots.qmd 
+    # - pages/diagrams.qmd  
+    # - pages/combination_analysis.qmd 
+    # - pages/transmission_chains.qmd 
+    # - pages/phylogenetic_trees.qmd 
+    # - pages/interactive_plots.qmd 
 
   # REPORTS AND DASHBOARDS
   - part: "Reports and dashboards"
@@ -132,9 +132,9 @@ book:
 
     chapters:
     - pages/rmarkdown.qmd 
-    - pages/reportfactory.qmd 
-    - pages/flexdashboard.qmd 
-    - pages/shiny_basics.qmd 
+    # - pages/reportfactory.qmd 
+    # - pages/flexdashboard.qmd 
+    # - pages/shiny_basics.qmd 
 
   # MISCELLANEOUS
   - part: "Miscellaneous"
@@ -142,12 +142,12 @@ book:
 
     chapters:
     - pages/writing_functions.qmd 
-    - pages/directories.qmd 
-    - pages/collaboration.qmd 
+    # - pages/directories.qmd 
+    # - pages/collaboration.qmd 
     - pages/errors.qmd 
     - pages/help.qmd 
-    - pages/network_drives.qmd 
-    - pages/data_table.qmd 
+    # - pages/network_drives.qmd 
+    # - pages/data_table.qmd 
 
 bibliography: pages/references.bib
 
