@@ -2,7 +2,7 @@ project:
   type: book
   # execute-dir: project
   output-dir: _book
-  # jupyter: julia-1.8
+
 
 published-title: "Last updated"
 lightbox: true # Lightbox images allow a reader to click to see a larger version of the image (including any caption)
